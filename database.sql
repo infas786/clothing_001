@@ -49,3 +49,17 @@ CREATE TABLE currency_exchange (
     rate DOUBLE,
     user_id INT
 );
+CREATE TABLE shipment (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ship_no VARCHAR(100),
+    ship_date DATETIME,
+    ship_charge DOUBLE,
+    ship_weight DOUBLE,
+    ship_pcs INT,
+    track_no VARCHAR(100),
+    track_link VARCHAR(500),
+    status VARCHAR(100), -- Added a comma here
+    rDateTime DATETIME,
+    user_id INT
+);
+
