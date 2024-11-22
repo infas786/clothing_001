@@ -42,6 +42,13 @@
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        #shipmentForm{
+            margin: 50px;
+            width: 40%;
+            border: solid 1px gray;
+            padding: 15px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
@@ -69,16 +76,42 @@
         </div>
 
 
+        <form id="shipmentForm">
+            <h3 style="text-align:center">Shipment Details</h3>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Shipping Id</label>
+                <input type="shipId" class="form-control" id="shipId" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Shipping No</label>
+                <input type="shipNo" class="form-control" id="shipNo" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Shipping Charge</label>
+                <input type="shipCharge" class="form-control" id="shipCharge" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Shipping Weight</label>
+                <input type="shipWeight" class="form-control" id="shipWeight" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Shipping Quantity</label>
+                <input type="shipPcs" class="form-control" id="shipPcs" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Airway Bill No</label>
+                <input type="abNumber" class="form-control" id="abNumber" aria-describedby="emailHelp">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Tracking link</label>
+                <input type="trackLink" class="form-control" id="trackLink" aria-describedby="emailHelp">
+
+            </div>
+            <button class="btn btn-success my-3" style="width: 100%;">Save</button>
+            <button class="btn btn-danger my3" style="width: 100%;">Cancel</button>
+
+        </form>
 
 
-
-
-
-
-
-
-
-
-
-
-        </html>      
+</html>
