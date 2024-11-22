@@ -48,3 +48,16 @@ CREATE TABLE currency_exchange (
     rate DOUBLE,
     user_id INT
 );
+-- Create the shipment table
+CREATE TABLE shipment (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ship_no VARCHAR(100),
+    ship_date DATETIME,
+    ship_charge DOUBLE,
+    ship_weight DOUBLE,
+    ship_pcs INT,
+    track_no VARCHAR(100),
+    track_link VARCHAR(500),
+    rDateTime DATETIME,
+    user_id INT
+);
