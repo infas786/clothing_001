@@ -1,5 +1,4 @@
--- Create the database
-CREATE DATABASE clothing_001;
+
 
 -- Use the database
 USE clothing_001;
