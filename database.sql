@@ -48,7 +48,10 @@ CREATE TABLE currency_exchange (
     rate DOUBLE,
     user_id INT
 );
+<<<<<<< HEAD
 -- Create the shipment table
+=======
+>>>>>>> f5291ea5f4e0ea930eae1d9c5c44652d4c028c45
 CREATE TABLE shipment (
     id INT AUTO_INCREMENT PRIMARY KEY,
     ship_no VARCHAR(100),
@@ -58,6 +61,14 @@ CREATE TABLE shipment (
     ship_pcs INT,
     track_no VARCHAR(100),
     track_link VARCHAR(500),
+<<<<<<< HEAD
     rDateTime DATETIME,
     user_id INT
 );
+=======
+    status VARCHAR(100), -- Added a comma here
+    rDateTime DATETIME,
+    user_id INT
+);
+
+>>>>>>> f5291ea5f4e0ea930eae1d9c5c44652d4c028c45
